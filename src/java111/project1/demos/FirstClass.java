@@ -7,7 +7,7 @@ public class FirstClass {
      * @param args the command line arguments
      */
      public static void main(String[] args) {
-        clsint weekNumber = 1;
+        int weekNumber = 1;
         String welcomeMessage = "Welcome to Java Programming!";
         boolean isSunny = true;
         
