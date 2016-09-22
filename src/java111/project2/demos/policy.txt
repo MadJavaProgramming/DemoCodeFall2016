@@ -1,0 +1,16 @@
+Name: Policy
+
+Instance Variables:
+    Policy Holder Name (String)
+    Policy Number (String)
+    Premium (double)
+    Insured (String)
+    Type (String)
+    Insured Item (String
+
+
+Methods: 
+
+    changePremium
+    addItem/Change Item
+    getters and setters for each instance variable

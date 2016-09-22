@@ -1,0 +1,7 @@
+public class System {
+
+    out.println(String whateverStringToPrint) {
+        // code here to write to the console.
+    
+    }
+}
