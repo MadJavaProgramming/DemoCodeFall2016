@@ -7,15 +7,68 @@
  public class Policy {
  
      private String policyHolderName;
-     private String policyNumber = "000000000000";
+     private String policyNumber = "000000000000";
+
 	 private double premium;
      private int termInMonths;
      private String insuredName;
      private String policyType;
-     private String insuredItem;
+     private String insuredItem;
+
 	/**
-	 * Returns the value of termInMonths.
-	 * @return term in months
+	 * Returns the value of policyHolderName.
+	 * @return policy holder name
+	 */
+	public String getPolicyHolderName() {
+		return policyHolderName;
+	}
+
+
+	/**
+	 * Sets the value of policyHolderName.
+	 * @param policyHolderName The value to assign policyHolderName.
+	 */
+	public void setPolicyHolderName(String policyHolderName) {
+		this.policyHolderName = policyHolderName;
+	}
+
+
+	/**
+	 * Returns the value of policyNumber.
+	 */
+	public String getPolicyNumber() {
+		return policyNumber;
+	}
+
+
+	/**
+	 * Sets the value of policyNumber.
+	 * @param policyNumber The value to assign policyNumber.
+	 */
+	public void setPolicyNumber(String policyNumber) {
+		this.policyNumber = policyNumber;
+	}
+
+
+	/**
+	 * Returns the value of premium.
+	 */
+	public double getPremium() {
+		return premium;
+	}
+
+
+	/**
+	 * Sets the value of premium.
+	 * @param premium The value to assign premium.
+	 */
+	public void setPremium(double premium) {
+		this.premium = premium;
+	}
+
+
+	/**
+	 * Returns the value of termInMonths.
 	 */
 	public int getTermInMonths() {
 		return termInMonths;
@@ -33,7 +86,6 @@
 
 	/**
 	 * Returns the value of insuredName.
-	 * @return name of the insured
 	 */
 	public String getInsuredName() {
 		return insuredName;
@@ -51,7 +103,6 @@
 
 	/**
 	 * Returns the value of policyType.
-	 * @return type of policy
 	 */
 	public String getPolicyType() {
 		return policyType;
@@ -69,7 +120,6 @@
 
 	/**
 	 * Returns the value of insuredItem.
-	 * @return insured item
 	 */
 	public String getInsuredItem() {
 		return insuredItem;
@@ -86,55 +136,7 @@
 
 	
      
-    /**
-     * getter for policyHolderName
-     * @return Name of the policy holder
-     */
-     public String getPolicyHolderName() {          
-         return policyHolderName;
-     }
-      
-    /**
-     * setter for the policyHolderName
-     * @param newPolicyHolderName new policy holder name
-     */
-     public void setPolicyHolderName(String newPolicyHolderName) {
-         policyHolderName = newPolicyHolderName;
-     }
-       
-    /**
-	 * Returns the value of policyNumber.
-	 * @return policy number
-	 */
-	public String getPolicyNumber() {
-		return policyNumber;
-	}
-
-
-	/**
-	 * Sets the value of policyNumber.
-	 * @param policyNumber The value to assign policyNumber.
-	 */
-	public void setPolicyNumber(String policyNumber) {
-		this.policyNumber = policyNumber;
-	}
-       
-    /** 
-     * getter for premium
-     * @return premium amount
-     */
-    public double getPremium(){
-        return premium;
-    } 
-        
-    /** 
-     * sets the premium
-     * @param newPremium new Premium for the policy
-     */
-    public void setPremium(double newPremium) {
-        premium = newPremium;
-    }
-         
+
      
     /** 
      * Reduce or increase the premium

@@ -47,7 +47,7 @@
         
         policies[2] = new Policy();
         policies[2].setPolicyHolderName("Rebecca");
-        policy2.setInsuredItem("Jeep Renegade");
+        policies[2].setInsuredItem("Jeep Renegade");
         
         // call the changePremium method passing in 50.00
         policy1.changePremium(50.00, false);
