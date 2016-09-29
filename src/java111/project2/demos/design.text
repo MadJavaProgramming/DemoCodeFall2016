@@ -1,0 +1,31 @@
+BookOfBusiness - the agent's policies and some info about the agent
+
+InstanceVariable
+    String agentName 
+     Array policies (Policy[])
+     
+Methods
+    getAgentName
+    setAgentName
+    getPolicies
+    setPolicies 
+    displayBook - display the list of policies - iterate over the policies array, displaying each policy
+    
+    
+===========================================
+
+BookOfBusinessProcessor - creates the book of business and creates policies
+
+InstanceVariable
+    BookOfBusiness book
+    
+Methods
+    run() 
+        instantiate the bookOfBusiness
+        create policies
+        give the policies to the bookOfBusiness 
+        display the book 
+
+
+
+    
