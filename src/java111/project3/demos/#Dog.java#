@@ -1,0 +1,48 @@
+/**
+ *  This class holds information about an individual dog
+ *
+ * @author    eknapp
+ */
+public class Dog {
+ 
+     private  int     weight;
+ 
+ 
+   
+    /**
+     *  Sets the weight attribute of the Dog object
+     *
+     * @param  weight  The new weight value
+     */
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+ 
+ 
+    /**
+     *  Gets the weight attribute of the Dog object
+     *
+     * @return    The weight value
+     */
+    public int getWeight() {
+        return weight;
+    }
+ 
+ 
+    /**
+     *  Description of the Method
+     *
+     * @return    Description of the Return Value
+     */
+    public int calculateFoodNeeded() {
+        if (weight <= 50) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+ 
+ 
+ 
+ 
+}

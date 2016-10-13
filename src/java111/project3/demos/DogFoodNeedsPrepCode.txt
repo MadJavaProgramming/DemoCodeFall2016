@@ -1,0 +1,18 @@
+Class: TestDogFoodNeeds
+
+Goal: Verify the Dog Food Needs Calculation works in all scenarios
+
+1. Create a dog
+2. SetSize to less than 50
+3. create another dog
+4. setsize to more than 50
+5. call calculate food needed on each dog
+6. create another dog 
+7. set size to 50
+
+6. if dog1 food = 1, print a success message for the small dog
+    else print a fail message for the small dog
+    repeat for large dog - should have 2 units
+    repeat for 50lb dog - should have 2 units
+
+
