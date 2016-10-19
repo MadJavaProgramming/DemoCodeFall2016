@@ -82,7 +82,7 @@ public class Kennel {
     public void calculateTotalFoodWeight() {
         Dog  dog  = null;
         for (int i = 0; i < dogs.size(); i++) {
-            dog = (Dog) dogs.get(i);
+            dog = dogs.get(i);
             totalFoodForWeek += dog.calculateFoodNeeded() * 7;
         }
     }
