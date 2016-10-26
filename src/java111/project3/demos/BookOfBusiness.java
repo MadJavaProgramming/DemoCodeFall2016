@@ -89,9 +89,22 @@ import java.util.*;
 	     System.out.println();
 	     for (int counter = 0; counter < policies.size(); counter++) {
 	         policies.get(counter).display();
-	         // line 89 is the same as:
-	         //Policy myPolicy = policy.get(counter);
-	         //myPolicy.display();
+	         System.out.println();
+	     }
+	 
+	 }
+	 
+	 public void displayUsingEnhancedFor() {
+	
+	     System.out.println("Agent " + agentName + " Book of Business");
+	     System.out.println("***********************************");
+	     System.out.println();
+	     // accessing the arraylist
+	     // policies is the arraylist (the collection I'm iterating over)
+	     // policy is a variable for each item in the arraylist
+	     // read this as: for each policy in the policies arraylist display that policy
+	     for (Policy policy : policies ) {
+	         policy.display();
 	         System.out.println();
 	     }
 	 
