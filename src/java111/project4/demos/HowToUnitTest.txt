@@ -1,0 +1,15 @@
+Unit test:
+
+1. Instantiate an object of the class you wish to test
+2. Set any necessary instance variables on that class to create the test condition
+3. Call the method/s you wish to test
+4. Compare the expected value/s with the actual value, print success if they match, fail if they do not
+5. Repeat for all conditions.
+
+
+For Project 3:
+Test area calculation: need length and width
+Test Season charge: need length, width 
+Test service charge: need # of payments 
+
+   
