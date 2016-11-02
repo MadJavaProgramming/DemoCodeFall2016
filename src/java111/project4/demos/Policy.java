@@ -11,9 +11,7 @@
 
 	 private double premium;
      private int termInMonths;
-     private String insuredName;
-     private String policyType;
-     private String insuredItem;
+     
 
 
 	/**
@@ -153,109 +151,7 @@
 
 
 
-	/**
-
-	 * Returns the value of insuredName.
-
-	 */
-
-	public String getInsuredName() {
-
-		return insuredName;
-
-	}
-
-
-
-
-
-	/**
-
-	 * Sets the value of insuredName.
-
-	 * @param insuredName The value to assign insuredName.
-
-	 */
-
-	public void setInsuredName(String insuredName) {
-
-		this.insuredName = insuredName;
-
-	}
-
-
-
-
-
-	/**
-
-	 * Returns the value of policyType.
-
-	 */
-
-	public String getPolicyType() {
-
-		return policyType;
-
-	}
-
-
-
-
-
-	/**
-
-	 * Sets the value of policyType.
-
-	 * @param policyType The value to assign policyType.
-
-	 */
-
-	public void setPolicyType(String policyType) {
-
-		this.policyType = policyType;
-
-	}
-
-
-
-
-
-	/**
-
-	 * Returns the value of insuredItem.
-
-	 */
-
-	public String getInsuredItem() {
-
-		return insuredItem;
-
-	}
-
-
-
-
-
-	/**
-
-	 * Sets the value of insuredItem.
-
-	 * @param insuredItem The value to assign insuredItem.
-
-	 */
-
-	public void setInsuredItem(String insuredItem) {
-
-		this.insuredItem = insuredItem;
-
-	}
-
-
-
 	
-     
-
      
     /** 
      * Reduce or increase the premium
@@ -298,9 +194,7 @@
         System.out.println("Policy Number: " + policyNumber);
         System.out.println("Premium: " + formatPremium());
         System.out.println("Term: " + termInMonths);
-        System.out.println("Insured Name: " + insuredName);
-        System.out.println("Policy Type: " + policyType);
-        System.out.println("Insured Item: " + insuredItem);
+        
     }
  
  

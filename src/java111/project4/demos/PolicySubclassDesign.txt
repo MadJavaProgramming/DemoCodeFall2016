@@ -1,0 +1,30 @@
+Policy  - Superclass
+
+private String policyHolderName;
+private String policyNumber = "000000000000";
+private int termInMonths;
+private double premium;
+
+
+
+Instance variables that probably belong in subclasses
+
+private String insuredName;
+     private String policyType;
+     private String insuredItem;
+     
+     System.out.println("Insured Name: " + insuredName);
+     System.out.println("Policy Type: " + policyType);
+     System.out.println("Insured Item: " + insuredItem);
+     
+     
+AutoPolicy - subclass of Policy
+
+String vin;
+String make;
+String model;
+
+calculateMileagePerYear();
+
+display method to print vin, make and model
+

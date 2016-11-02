@@ -8,7 +8,7 @@ import java.util.*;
  public class BookOfBusiness {
     private String agentName; 
     //private Policy[] policies;
-    private ArrayList<Policy> policies;
+    private ArrayList<AutoPolicy> policies;
     
 
 	/**
@@ -53,7 +53,7 @@ import java.util.*;
 	 * @return agent's list of policies
 	 */
 
-	public ArrayList<Policy> getPolicies() {
+	public ArrayList<AutoPolicy> getPolicies() {
 
 		return policies;
 
@@ -71,7 +71,7 @@ import java.util.*;
 
 	 */
 
-	public void setPolicies(ArrayList<Policy> policies) {
+	public void setPolicies(ArrayList<AutoPolicy> policies) {
 
 		this.policies = policies;
 
