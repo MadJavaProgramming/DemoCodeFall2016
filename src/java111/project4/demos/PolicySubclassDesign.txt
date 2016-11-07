@@ -28,3 +28,27 @@ calculateMileagePerYear();
 
 display method to print vin, make and model
 
+
+HealthPolicy - subclass of Policy
+GroupId - String
+PrimaryCareProvider - String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

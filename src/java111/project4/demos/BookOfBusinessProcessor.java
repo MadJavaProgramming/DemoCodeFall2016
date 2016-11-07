@@ -6,6 +6,7 @@ import java.util.*;
  
  public class BookOfBusinessProcessor {
      private BookOfBusiness book;
+     private ArrayList<Policy> policies;
      
 	/**
 	 * Returns the value of book.
@@ -32,6 +33,7 @@ import java.util.*;
 	    // instantiate the book of business object and 
 	    // assign it to the instance variable
 	    createBook();
+	    createHealthPolicies();
 	    createAutoPolicies();
 	    displayBook();
  
@@ -43,40 +45,45 @@ import java.util.*;
 	    book = new BookOfBusiness(); // creates the object for the instance variable
 	   
 	    book.setAgentName("Sam"); 
+	    
+	    // instantiate the arraylist to hold policies
+	    policies = new ArrayList<Policy>();
 	 }
 	 
-	 /** create agent's policies */
-	 public void createPolicies() {
+	 /** create agent's health policies */
+	 public void createHealthPolicies() {
 	    // instantiate a policy object
         // Policy is the type
         // policy1 is the object reference variable
-        Policy policy1 = new Policy();
-        Policy policy2 = new Policy();
-        Policy policy3 = new Policy();
+        HealthPolicy policy1 = new HealthPolicy();
+        HealthPolicy policy2 = new HealthPolicy();
+        HealthPolicy policy3 = new HealthPolicy();
         
         // Create an array to hold 3 policies
-        
-        //Policy[] policies = new Policy[3];
-        ArrayList<Policy>  policies = new ArrayList<Policy>();
-        
+         
         // set each instance variable
         policy1.setPolicyHolderName("Darci Donaldson");
         policy1.setPolicyNumber("74-A-123-BC");
         policy1.setPremium(500.00);
         policy1.setTermInMonths(12);
+        policy1.setGroupId("737373");
+        policy1.setPrimaryCareProvider("Dr. Phil");
          
         // set each instance variable
         policy2.setPolicyHolderName("Mickey Mouse");
         policy2.setPolicyNumber("75-123-BC");
         policy2.setPremium(250.00);
         policy2.setTermInMonths(6);
+        policy2.setGroupId("9999");
+        policy2.setPrimaryCareProvider("Dr. D");
         
         // set each instance variable
         policy3.setPolicyHolderName("Daffy Duck");
         policy3.setPolicyNumber("75-123-BC");
         policy3.setPremium(250.00);
         policy3.setTermInMonths(6);
-       
+        policy3.setGroupId("6666");
+        policy3.setPrimaryCareProvider("Dr. Phil");
        
         // put the policies in the array
         policies.add(policy1);
@@ -88,9 +95,7 @@ import java.util.*;
  	     
 	 }
 	 
-	  public void createAutoPolicies() {
-	    ArrayList<AutoPolicy> autoPolicies = new ArrayList<AutoPolicy>();      
-	      
+	  public void createAutoPolicies() {	      
 	    // instantiate a policy object
         // Policy is the type
         // policy1 is the object reference variable
@@ -122,11 +127,11 @@ import java.util.*;
         autoPolicy3.setModel("Wrangler");
         autoPolicy3.setVin("203984039284");
         
-        autoPolicies.add(autoPolicy1);
-        autoPolicies.add(autoPolicy2);
-        autoPolicies.add(autoPolicy3);
+        policies.add(autoPolicy1);
+        policies.add(autoPolicy2);
+        policies.add(autoPolicy3);
         
-        book.setPolicies(autoPolicies);
+        book.setPolicies(policies);
         
      }
 	 
