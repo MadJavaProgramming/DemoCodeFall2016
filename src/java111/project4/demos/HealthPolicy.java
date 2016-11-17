@@ -72,6 +72,11 @@
 		this.primaryCareProvider = PrimaryCareProvider;
 
 	}
+	
+	/** This the method to determine risk **/
+     public void determineRisk(){
+         //TODO add code to determine the risk on this person
+     }
 
 	
 	/** Display calls the display on Policy and then adds

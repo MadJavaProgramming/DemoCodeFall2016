@@ -6,7 +6,7 @@
  
      public static void main(String[] args) {
          // instantiate the class you want to test
-         Policy policy = new Policy();
+         Policy policy = new AutoPolicy();
          
          // set any necessary instance variables
          policy.setPremium(500);

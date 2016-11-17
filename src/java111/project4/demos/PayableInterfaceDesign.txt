@@ -1,0 +1,17 @@
+Interface  - Payable
+
+method: getPaymentAmount
+
+policy - getPaymentAmount - will be the premium
+book of business - getPaymentAmount - agent gets paid 10% of the book's premium
+
+1. create interface 
+2. create an abstract method in the interface called getPaymentAmount
+
+3. Policy, implement the interface
+4. implement getPaymentAmount
+
+
+5. Book, implement the interface
+6. implement getPaymentAmount
+

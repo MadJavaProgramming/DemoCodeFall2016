@@ -4,7 +4,7 @@
  * @author pwaite
  */
  
- public class Policy {
+ public abstract class Policy implements Payable {
  
      private String policyHolderName;
      private String policyNumber = "000000000000";
@@ -13,6 +13,10 @@
      private int termInMonths;
      
 
+     /** This the method to determine risk 
+         this is an abstract method and must be implemented in all subclasses
+     **/
+     public abstract void determineRisk();
 
 	/**
 
@@ -25,6 +29,10 @@
 
 		return policyHolderName;
 
+	}
+	
+	public double getPaymentAmount() {
+	    return premium;
 	}
 
 

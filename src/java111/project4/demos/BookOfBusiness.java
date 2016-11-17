@@ -5,7 +5,7 @@ import java.util.*;
  * @author pwaite
  */
 
- public class BookOfBusiness {
+ public class BookOfBusiness implements Payable, Comparable {
     private String agentName; 
     //private Policy[] policies;
     private ArrayList<Policy> policies;
@@ -59,10 +59,6 @@ import java.util.*;
 
 	}
 
-
-
-
-
 	/**
 
 	 * Sets the value of policies.
@@ -75,6 +71,17 @@ import java.util.*;
 
 		this.policies = policies;
 
+	}
+	
+	public double getPaymentAmount() {
+	    // iterate over all policies, adding up the premium
+	    double totalPremium = 0;
+	    
+	    for (Policy policy : policies) {
+	        totalPremium += policy.getPremium();
+	    }
+	    return totalPremium * .1;
+	    
 	}
 
 	
@@ -91,6 +98,7 @@ import java.util.*;
 	         policies.get(counter).display();
 	         System.out.println();
 	     }
+	     System.out.println("Agent's income is: " + getPaymentAmount());
 	 
 	 }
 	 
@@ -109,20 +117,5 @@ import java.util.*;
 	     }
 	 
 	 }
-
-
-	
-  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  }
