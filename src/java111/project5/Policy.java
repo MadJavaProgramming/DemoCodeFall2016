@@ -14,6 +14,8 @@ package java111.project5;
 	 private double premium;
      private int termInMonths;
      
+     public static int count;
+     
 
      /** This the method to determine risk 
          this is an abstract method and must be implemented in all subclasses

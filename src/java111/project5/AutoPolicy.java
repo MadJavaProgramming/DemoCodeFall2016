@@ -12,7 +12,8 @@ package java111.project5;
      private String model; 
      
      public AutoPolicy() {
-         System.out.println("Creating an Auto Policy using the no-arg constructor");
+         Policy.count++;
+         System.out.println("Creating an Auto Policy using the no-arg constructor. The current policy count is: " + Policy.count);
      }
      
       public AutoPolicy(String vin, String make, String model) {
@@ -151,6 +152,7 @@ package java111.project5;
 	    System.out.println("The vin is: " + vin);
 	    System.out.println("The make is: " + make);
 	    System.out.println("The model is: " + model);
+	    System.out.println("The Policy count is " + Policy.count);
 	    
 	}
      
